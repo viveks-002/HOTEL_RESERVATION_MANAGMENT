@@ -4,7 +4,8 @@ import cors from "cors";
 import { errorMiddleware } from "./middlewares/error.js";
 import reservationRouter from "./routes/reservationRoute.js";
 import { dbConnection } from "./database/dbConnection.js";
-
+import path from "path";
+import { fileURLToPath } from "url";
 const app = express();
 dotenv.config({ path: "./config.env" });
 
@@ -14,9 +15,22 @@ app.use(
     credentials: true,
   })
 );
-app.get('/', (req, res) => {
-  res.send("Hello World!");
-});
+// app.get('/', (req, res) => {
+//   res.send("Hello World!");
+// });
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
+
+// Static folder from Vite/Cra build
+const frontendPath = path.join(__dirname, '../frontend/dist') // use 'build' if CRA
+
+app.use(express.static(frontendPath))
+
+// Serve index.html for all unknown routes (React Router support)
+app.get('*', (req, res) => {
+  res.sendFile(path.join(frontendPath, 'index.html'))
+})
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
