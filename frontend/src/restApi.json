@@ -5,19 +5,19 @@
                 "id": 1,
                 "image": "./quality_food.svg",
                 "title": "QUALITY FOOD",
-                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis repellendus officia qui repellat." 
+                "description": "Good food starts with great ingredients — and we never compromise on quality."
             },
             {
                 "id": 2,
                 "image": "./super_taste.svg",
                 "title": "SUPER TASTE",
-                "description": "Lorem ipsum dolor sit amet consectetur, adipisicing sit amet elit. Sit voluptates quaerat pariatur." 
+                "description": "Where every bite bursts with mouthwatering magic." 
             },
             {
                 "id": 3,
                 "image": "./fast_delivery.svg",
                 "title": "FAST DELIVERY",
-                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis repellendus officia qui repellat." 
+                "description": "We don’t just serve great food, we deliver it in record time." 
             }
         ],
         "dishes": [
@@ -74,25 +74,25 @@
             {
                 "id": 1,
                 "image": "./team_member_1.png",
-                "name": "JOHNATHAN TYLER",
-                "designation": "Founder & Head Chef"
+                "name": "VIVEK KR SINGH",
+                "designation": "MAALIK & Head Chef"
             },
             {
                 "id": 2,
                 "image": "./team_member_2.png",
-                "name": "WADE WARREN",
-                "designation": "Sous Chef"
+                "name": "ROHAN RAJ PRAMOD LAKHERA",
+                "designation": "Non-Veg Chef"
             },
             {
                 "id": 3,
                 "image": "./team_member_3.png",
-                "name": "JHON DOE",
-                "designation": "Fast Food Chef"
+                "name": "ADITYA ARYA",
+                "designation": "Veg Chef"
             },
             {
                 "id": 4,
                 "image": "./team_member_4.png",
-                "name": "ALEX COAL",
+                "name": "SANJEEV KAPOOR SAHAB",
                 "designation": "Senior Chef"
             }
         ],

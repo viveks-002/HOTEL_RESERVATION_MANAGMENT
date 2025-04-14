@@ -13,13 +13,11 @@ const About = () => {
               <p>The only thing we're serious about is food.</p>
             </div>
             <p className="mid">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Provident possimus optio adipisci dolores impedit illum iusto
-              perferendis, laudantium quod accusamus consequuntur consectetur,
-              tempore nulla error iure reiciendis dolorem assumenda.
-              Necessitatibus fugit asperiores totam rem esse exercitationem
-              iusto ipsum qui dolore ex, accusantium repellat mollitia
-              repellendus.
+            Welcome to KHAANA KHAZANA  — where passion meets the plate. We're more than just a place to eat; we're a place to experience real flavor, heartfelt hospitality, and unforgettable meals.
+
+At the heart of our kitchen is a simple belief: quality food made with love brings people together. We use only the freshest ingredients, time-tested recipes, and a touch of creativity to serve dishes that not only satisfy hunger but create lasting memories.
+
+Whether you're joining us for a casual bite or a special celebration, we’re here to make every meal feel like home. Come hungry, leave happy — that’s our promise to you.
             </p>
             <Link to={"/"}>
               Explore Menu{" "}

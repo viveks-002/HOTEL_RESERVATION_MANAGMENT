@@ -1,6 +1,8 @@
-import mongoose from "mongoose";
+import mongoose, { connect } from "mongoose";
 
 export const dbConnection = () => {
+  console.log("Connecting to database...");
+  console.log(process.env.MONGO_URI);
   mongoose
     .connect(process.env.MONGO_URI, {
       dbName: "RESERVATIONS",

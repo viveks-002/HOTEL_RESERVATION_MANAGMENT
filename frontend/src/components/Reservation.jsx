@@ -17,8 +17,9 @@ const Reservation = () => {
   const handleReservation = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post(
-        "http://localhost:4000/reservation/send",
+      const data = await axios.post(
+        `${import.meta.env.VITE_BACKEND_URL}/api/v1/reservation/send`
+        ,
         { firstName, lastName, email, phone, date, time },
         {
           headers: {
@@ -87,12 +88,32 @@ const Reservation = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
-                <input
-                  type="number"
-                  placeholder="Phone"
-                  value={phone}
-                  onChange={(e) => setPhone(e.target.value)}
-                />
+                <div
+                  style={{ display: "flex", alignItems: "center", gap: "6px" }}
+                >
+                  <span>+91</span>
+                  <input
+                    type="tel"
+                    placeholder="Phone"
+                    value={phone}
+                    onChange={(e) => {
+                      const input = e.target.value;
+                      if (/^\d{0,10}$/.test(input)) {
+                        setPhone(input);
+                      }
+                    }}
+                    required
+                    pattern="\d{10}"
+                    maxLength={10}
+                    inputMode="numeric"
+                    style={{
+                      flex: 1,
+                      padding: "6px",
+                      border: "1px solid #ccc",
+                      borderRadius: "4px",
+                    }}
+                  />
+                </div>
               </div>
               <button type="submit" onClick={handleReservation}>
                 RESERVE NOW{" "}

@@ -15,6 +15,9 @@ app.use(
     credentials: true,
   })
 );
+app.get('/', (req, res) => {
+  res.send("Hello World!");
+});
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
