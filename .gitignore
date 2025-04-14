@@ -1,7 +1,7 @@
 /backend/node_modules
 
 /backend/.env
-/backend/.env.local
+/backend/config.env
 /fontend/node_modules
 /fontend/dist
 /fontend/.env

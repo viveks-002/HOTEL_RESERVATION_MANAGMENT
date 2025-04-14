@@ -18,7 +18,7 @@ const Reservation = () => {
     e.preventDefault();
     try {
       const data = await axios.post(
-        `${import.meta.env.VITE_BACKEND_URL}/api/v1/reservation/send`
+        `https://hotel-reservation-managment.onrender.com/api/v1/reservation/send`
         ,
         { firstName, lastName, email, phone, date, time },
         {
